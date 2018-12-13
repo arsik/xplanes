@@ -1785,7 +1785,7 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
     left: 0; }
   .registration-login-form .nav-item {
     margin-bottom: 0;
-    height: 50%;
+    height: 33.3333%;
     display: table; }
     .registration-login-form .nav-item:last-child .nav-link {
       border-bottom: 0; }
