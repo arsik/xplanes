@@ -17,9 +17,9 @@ $this->params['breadcrumbs'][] = $this->title;
 				<h1>Добро пожаловать на xPlanes Rustler Air War</h1>
 				<p>Крупнейший симулятор воздушных боев на движке GTA San Andreas Multyplayer.<br>Участвуйте в воздушных боях с друзьями, создавайте кланы, зарабатывайте достижения. Все это на xPlanes RAW
 				</p>
-				<a href="samp://95.213.236.203:7777" class="btn btn-md bg-blue" style="font-size:14px; text-transform: uppercase;">Подключиться</a>
-				<a href="#signup" class="btn btn-md bg-blue" style="font-size:14px; text-transform: uppercase;">Купить аккаунт</a>
 			</div>
+			<a href="samp://95.213.236.203:7777" class="btn btn-md bg-blue" style="font-size:14px; text-transform: uppercase;">Подключиться</a>
+			<a href="#signup" class="btn btn-md bg-blue" style="font-size:14px; text-transform: uppercase;">Купить аккаунт</a>
 		</div>
 
 		<div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12">
