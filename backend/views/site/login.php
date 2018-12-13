@@ -121,7 +121,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 					<div class="tab-pane active" id="signup" role="tabpanel" data-mh="log-tab">
 						<div class="title h6">Регистрация</div>
-						<form class="content" action="/site/login" method="post">
+						<form class="content" action="/site/signup" method="post">
               <input type="hidden" name="<?= Yii::$app->request->csrfParam; ?>" value="<?= Yii::$app->request->csrfToken; ?>" />
 							<div class="row">
 								<div class="col-xl-12 col-lg-12 col-md-12">
@@ -136,28 +136,7 @@ $this->params['breadcrumbs'][] = $this->title;
 										<label class="control-label">Пароль</label>
 										<input class="form-control" name="LoginForm[password]" placeholder="" type="password" required>
 									</div>
-
-									<div class="remember">
-
-										<div class="checkbox">
-											<label>
-												<input name="optionsCheckboxes" name="LoginForm[rememberMe]" value="1" type="checkbox">
-												Запомнить меня
-											</label>
-										</div>
-										<a href="#" class="forgot">Забыли пароль?</a>
-									</div>
-
 									<button class="btn btn-lg btn-primary full-width">Войти</button>
-
-									<!-- <div class="or"></div>
-
-									<a href="#" class="btn btn-lg bg-facebook full-width btn-icon-left"><i class="fa fa-facebook" aria-hidden="true"></i>Login with Facebook</a>
-
-									<a href="#" class="btn btn-lg bg-twitter full-width btn-icon-left"><i class="fa fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
-
-
-									<p>Don’t you have an account? <a href="#">Register Now!</a> it’s really simple and you can start enjoing all the benefits!</p> -->
 								</div>
 							</div>
 						</form>
