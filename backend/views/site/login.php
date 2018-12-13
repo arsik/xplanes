@@ -26,12 +26,17 @@ $this->params['breadcrumbs'][] = $this->title;
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link <?=($errors > 0 ? '' : 'active')?>" data-toggle="tab" href="#home" role="tab">
+						<a class="nav-link" data-toggle="tab" href="#home" role="tab">
 							<svg class="olymp-login-icon"><use xlink:href="/icon/icons.svg#olymp-login-icon"></use></svg>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link <?=($errors == 0 ? '' : 'active')?>" data-toggle="tab" href="#profile" role="tab">
+							<svg class="olymp-register-icon"><use xlink:href="/icon/icons.svg#olymp-register-icon"></use></svg>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#signup" role="tab">
 							<svg class="olymp-register-icon"><use xlink:href="/icon/icons.svg#olymp-register-icon"></use></svg>
 						</a>
 					</li>
@@ -72,6 +77,50 @@ $this->params['breadcrumbs'][] = $this->title;
 
 					<div class="tab-pane <?=($errors == 0 ? '' : 'active')?>" id="profile" role="tabpanel" data-mh="log-tab">
 						<div class="title h6">Авторизация</div>
+						<form class="content" action="/site/login" method="post">
+              <input type="hidden" name="<?= Yii::$app->request->csrfParam; ?>" value="<?= Yii::$app->request->csrfToken; ?>" />
+							<div class="row">
+								<div class="col-xl-12 col-lg-12 col-md-12">
+                  <?php if($errors) : ?>
+                  <p class="error-text">Неверный никнейм или пароль</p>
+                  <?php endif; ?>
+									<div class="form-group label-floating is-empty">
+										<label class="control-label">Никнейм</label>
+										<input class="form-control" name="LoginForm[username]" placeholder="" type="text" required>
+									</div>
+									<div class="form-group label-floating is-empty">
+										<label class="control-label">Пароль</label>
+										<input class="form-control" name="LoginForm[password]" placeholder="" type="password" required>
+									</div>
+
+									<div class="remember">
+
+										<div class="checkbox">
+											<label>
+												<input name="optionsCheckboxes" name="LoginForm[rememberMe]" value="1" type="checkbox">
+												Запомнить меня
+											</label>
+										</div>
+										<a href="#" class="forgot">Забыли пароль?</a>
+									</div>
+
+									<button class="btn btn-lg btn-primary full-width">Войти</button>
+
+									<!-- <div class="or"></div>
+
+									<a href="#" class="btn btn-lg bg-facebook full-width btn-icon-left"><i class="fa fa-facebook" aria-hidden="true"></i>Login with Facebook</a>
+
+									<a href="#" class="btn btn-lg bg-twitter full-width btn-icon-left"><i class="fa fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
+
+
+									<p>Don’t you have an account? <a href="#">Register Now!</a> it’s really simple and you can start enjoing all the benefits!</p> -->
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="tab-pane active" id="signup" role="tabpanel" data-mh="log-tab">
+						<div class="title h6">Регистрация</div>
 						<form class="content" action="/site/login" method="post">
               <input type="hidden" name="<?= Yii::$app->request->csrfParam; ?>" value="<?= Yii::$app->request->csrfToken; ?>" />
 							<div class="row">
