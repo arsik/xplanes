@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				</p>
 			</div>
 			<a href="samp://95.213.236.203:7777" class="btn btn-md bg-blue" style="font-size:14px; text-transform: uppercase;">Подключиться</a>
-			<a href="#signup" class="btn btn-md bg-blue" style="font-size:14px; text-transform: uppercase;">Купить аккаунт</a>
+			<a href="#signup" class="btn btn-md bg-primary" style="font-size:14px; text-transform: uppercase;">Купить аккаунт</a>
 		</div>
 
 		<div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12">
