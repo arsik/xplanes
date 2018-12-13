@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link <?=($errors == 0 ? '' : 'active')?>" data-toggle="tab" href="#profile" role="tab">
+						<a class="nav-link" data-toggle="tab" href="#profile" role="tab">
 							<svg class="olymp-register-icon"><use xlink:href="/icon/icons.svg#olymp-register-icon"></use></svg>
 						</a>
 					</li>
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 				<!-- Tab panes -->
 				<div class="tab-content">
-					<div class="tab-pane <?=($errors > 0 ? '' : 'active')?>" id="home" role="tabpanel" data-mh="log-tab">
+					<div class="tab-pane " id="home" role="tabpanel" data-mh="log-tab">
 						<div class="title h6">Мониторинг</div>
 
             <div class="monitor-info">
@@ -75,7 +75,7 @@ $this->params['breadcrumbs'][] = $this->title;
 					</div>
 
 
-					<div class="tab-pane <?=($errors == 0 ? '' : 'active')?>" id="profile" role="tabpanel" data-mh="log-tab">
+					<div class="tab-pane" id="profile" role="tabpanel" data-mh="log-tab">
 						<div class="title h6">Авторизация</div>
 						<form class="content" action="/site/login" method="post">
               <input type="hidden" name="<?= Yii::$app->request->csrfParam; ?>" value="<?= Yii::$app->request->csrfToken; ?>" />
