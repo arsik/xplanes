@@ -133,8 +133,16 @@ $this->params['breadcrumbs'][] = $this->title;
 										<input class="form-control" name="LoginForm[username]" placeholder="" type="text" required>
 									</div>
 									<div class="form-group label-floating is-empty">
+										<label class="control-label">E-Mail</label>
+										<input class="form-control" name="LoginForm[email]" placeholder="" type="text" required>
+									</div>
+									<div class="form-group label-floating is-empty">
 										<label class="control-label">Пароль</label>
 										<input class="form-control" name="LoginForm[password]" placeholder="" type="password" required>
+									</div>
+									<div class="form-group label-floating is-empty">
+										<label class="control-label">Промокод</label>
+										<input class="form-control" name="LoginForm[password]" placeholder="" type="text">
 									</div>
 									<button class="btn btn-lg btn-primary full-width">Войти</button>
 								</div>
